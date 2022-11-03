@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>My Project</title>
+    </head>
+    <body>
+        <header>
+            <h1>You are in home</h1>
+        </header>
+        <main>
+            <h2>{{type}}</h2>
+            <h3>{{name}}</h3>
+            <img src="{{img}}"/>
+            {% for poke in rest %}
+                <img src="{{poke.img}}" />
+                <p>{{poke.name}}</p>
+            {% endfor %}
+        </main>
+    </body>
+</html>

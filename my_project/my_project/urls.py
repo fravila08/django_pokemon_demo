@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # This is linking the urls.py file in my_app to my project
     path('', include("my_app.urls"))
 ]
